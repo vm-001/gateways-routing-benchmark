@@ -1,0 +1,16 @@
+services:
+  apisix:
+    image: apache/apisix:latest
+    container_name: apisix
+    restart: always
+    user: root
+    volumes:
+      - ./config/config.yaml:/usr/local/apisix/conf/config.yaml
+      - ./config/apisix-${BENCHMARK_DATA}.yaml:/usr/local/apisix/conf/apisix.yaml
+    environment:
+      - APISIX_STAND_ALONE=true
+      - WORKER_PROCESSES=${CPU_CORES:-1}
+    ports:
+      - "9080:9080/tcp"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

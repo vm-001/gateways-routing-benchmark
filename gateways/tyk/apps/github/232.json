@@ -1,0 +1,21 @@
+{
+  "name": "/orgs/{org}/codespaces/access/selected_users",
+  "api_id": "232",
+  "org_id": "test",
+  "use_keyless": true,
+  "version_data": {
+    "not_versioned": true,
+    "versions": {
+      "Default": {
+        "name": "Default",
+        "use_extended_paths": true
+      }
+    }
+  },
+  "proxy": {
+    "listen_path": "/orgs/{org}/codespaces/access/selected_users",
+    "target_url": "http://host.docker.internal:8888/",
+    "strip_listen_path": false
+  },
+  "active": true
+}

@@ -1,0 +1,21 @@
+{
+  "name": "/orgs/{org}/actions/secrets/{secret_name}",
+  "api_id": "301",
+  "org_id": "test",
+  "use_keyless": true,
+  "version_data": {
+    "not_versioned": true,
+    "versions": {
+      "Default": {
+        "name": "Default",
+        "use_extended_paths": true
+      }
+    }
+  },
+  "proxy": {
+    "listen_path": "/orgs/{org}/actions/secrets/{secret_name}",
+    "target_url": "http://host.docker.internal:8888/",
+    "strip_listen_path": false
+  },
+  "active": true
+}

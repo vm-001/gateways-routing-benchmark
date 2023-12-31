@@ -1,0 +1,25 @@
+services:
+  tyk:
+    image: tykio/tyk-gateway:v5.1.0
+    container_name: tyk
+    ports:
+      - "8080:8080"
+    networks:
+      - tyk
+    volumes:
+      - ./tyk.conf:/opt/tyk-gateway/tyk.conf
+      - ./apps/${BENCHMARK_DATA}:/opt/tyk-gateway/apps
+    environment:
+      - TYK_GW_SECRET=foo
+      - GOMAXPROCS=${CPU_CORES:-1}
+    depends_on:
+      - redis
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+  redis:
+    image: redis:6.2.7-alpine
+    networks:
+      - tyk
+
+networks:
+  tyk:

@@ -1,0 +1,21 @@
+{
+  "name": "/dashboards/widgets/plugins",
+  "api_id": "55",
+  "org_id": "test",
+  "use_keyless": true,
+  "version_data": {
+    "not_versioned": true,
+    "versions": {
+      "Default": {
+        "name": "Default",
+        "use_extended_paths": true
+      }
+    }
+  },
+  "proxy": {
+    "listen_path": "/dashboards/widgets/plugins",
+    "target_url": "http://host.docker.internal:8888/",
+    "strip_listen_path": false
+  },
+  "active": true
+}

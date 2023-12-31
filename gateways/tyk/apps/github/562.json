@@ -1,0 +1,21 @@
+{
+  "name": "/classrooms/{classroom_id}/assignments",
+  "api_id": "562",
+  "org_id": "test",
+  "use_keyless": true,
+  "version_data": {
+    "not_versioned": true,
+    "versions": {
+      "Default": {
+        "name": "Default",
+        "use_extended_paths": true
+      }
+    }
+  },
+  "proxy": {
+    "listen_path": "/classrooms/{classroom_id}/assignments",
+    "target_url": "http://host.docker.internal:8888/",
+    "strip_listen_path": false
+  },
+  "active": true
+}

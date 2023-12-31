@@ -1,0 +1,47 @@
+_format_version: "3.0"
+
+services:
+  - name: example-service
+    host: host.docker.internal
+    port: 8888
+    protocol: http
+    routes:
+      - name: example-route
+        strip_path: false
+        paths:
+          - /chat/completions
+          - /completions
+          - /images/generations
+          - /images/edits
+          - /images/variations
+          - /embeddings
+          - /audio/speech
+          - /audio/transcriptions
+          - /audio/translations
+          - /files
+          - /files/{file_id}
+          - /files/{file_id}/content
+          - /fine_tuning/jobs
+          - /fine_tuning/jobs/{fine_tuning_job_id}
+          - /fine_tuning/jobs/{fine_tuning_job_id}/events
+          - /fine_tuning/jobs/{fine_tuning_job_id}/cancel
+          - /models
+          - /models/{model}
+          - /moderations
+          - /assistants
+          - /assistants/{assistant_id}
+          - /threads
+          - /threads/{thread_id}
+          - /threads/{thread_id}/messages
+          - /threads/{thread_id}/messages/{message_id}
+          - /threads/runs
+          - /threads/{thread_id}/runs
+          - /threads/{thread_id}/runs/{run_id}
+          - /threads/{thread_id}/runs/{run_id}/submit_tool_outputs
+          - /threads/{thread_id}/runs/{run_id}/cancel
+          - /threads/{thread_id}/runs/{run_id}/steps
+          - /threads/{thread_id}/runs/{run_id}/steps/{step_id}
+          - /assistants/{assistant_id}/files
+          - /assistants/{assistant_id}/files/{file_id}
+          - /threads/{thread_id}/messages/{message_id}/files
+          - /threads/{thread_id}/messages/{message_id}/files/{file_id}

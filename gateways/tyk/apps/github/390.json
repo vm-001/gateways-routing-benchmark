@@ -1,0 +1,21 @@
+{
+  "name": "/repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies",
+  "api_id": "390",
+  "org_id": "test",
+  "use_keyless": true,
+  "version_data": {
+    "not_versioned": true,
+    "versions": {
+      "Default": {
+        "name": "Default",
+        "use_extended_paths": true
+      }
+    }
+  },
+  "proxy": {
+    "listen_path": "/repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies",
+    "target_url": "http://host.docker.internal:8888/",
+    "strip_listen_path": false
+  },
+  "active": true
+}

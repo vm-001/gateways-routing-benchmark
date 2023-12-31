@@ -1,0 +1,19 @@
+apisix:
+  node_listen: 9080
+  enable_ipv6: false
+
+  router:
+    http: radixtree_uri_with_parameter
+
+nginx_config:
+  worker_processes: ${{WORKER_PROCESSES:=}}
+  http:
+    enable_access_log: false
+  worker_rlimit_nofile: 65535
+  event:
+    worker_connections: 65535
+
+deployment:
+  role: data_plane
+  role_data_plane:
+    config_provider: yaml

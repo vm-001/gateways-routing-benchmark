@@ -1,0 +1,21 @@
+{
+  "name": "/threads/{thread_id}/messages/{message_id}/files",
+  "api_id": "35",
+  "org_id": "test",
+  "use_keyless": true,
+  "version_data": {
+    "not_versioned": true,
+    "versions": {
+      "Default": {
+        "name": "Default",
+        "use_extended_paths": true
+      }
+    }
+  },
+  "proxy": {
+    "listen_path": "/threads/{thread_id}/messages/{message_id}/files",
+    "target_url": "http://host.docker.internal:8888/",
+    "strip_listen_path": false
+  },
+  "active": true
+}

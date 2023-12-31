@@ -1,0 +1,21 @@
+{
+  "name": "/users/{username}/packages/{package_type}/{package_name}/versions",
+  "api_id": "234",
+  "org_id": "test",
+  "use_keyless": true,
+  "version_data": {
+    "not_versioned": true,
+    "versions": {
+      "Default": {
+        "name": "Default",
+        "use_extended_paths": true
+      }
+    }
+  },
+  "proxy": {
+    "listen_path": "/users/{username}/packages/{package_type}/{package_name}/versions",
+    "target_url": "http://host.docker.internal:8888/",
+    "strip_listen_path": false
+  },
+  "active": true
+}

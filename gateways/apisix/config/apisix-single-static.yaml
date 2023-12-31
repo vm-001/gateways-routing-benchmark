@@ -1,0 +1,7 @@
+routes:
+  - uri: /api
+    upstream:
+      nodes:
+        "host.docker.internal:8888": 1
+      type: roundrobin
+#END

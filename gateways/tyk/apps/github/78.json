@@ -1,0 +1,21 @@
+{
+  "name": "/app/installations/{installation_id}/access_tokens",
+  "api_id": "78",
+  "org_id": "test",
+  "use_keyless": true,
+  "version_data": {
+    "not_versioned": true,
+    "versions": {
+      "Default": {
+        "name": "Default",
+        "use_extended_paths": true
+      }
+    }
+  },
+  "proxy": {
+    "listen_path": "/app/installations/{installation_id}/access_tokens",
+    "target_url": "http://host.docker.internal:8888/",
+    "strip_listen_path": false
+  },
+  "active": true
+}

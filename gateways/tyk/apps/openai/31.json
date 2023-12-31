@@ -1,0 +1,21 @@
+{
+  "name": "/threads/{thread_id}/runs/{run_id}/steps",
+  "api_id": "31",
+  "org_id": "test",
+  "use_keyless": true,
+  "version_data": {
+    "not_versioned": true,
+    "versions": {
+      "Default": {
+        "name": "Default",
+        "use_extended_paths": true
+      }
+    }
+  },
+  "proxy": {
+    "listen_path": "/threads/{thread_id}/runs/{run_id}/steps",
+    "target_url": "http://host.docker.internal:8888/",
+    "strip_listen_path": false
+  },
+  "active": true
+}

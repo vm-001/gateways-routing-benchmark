@@ -1,0 +1,21 @@
+{
+  "name": "/orgs/{org}/hooks/{hook_id}/config",
+  "api_id": "495",
+  "org_id": "test",
+  "use_keyless": true,
+  "version_data": {
+    "not_versioned": true,
+    "versions": {
+      "Default": {
+        "name": "Default",
+        "use_extended_paths": true
+      }
+    }
+  },
+  "proxy": {
+    "listen_path": "/orgs/{org}/hooks/{hook_id}/config",
+    "target_url": "http://host.docker.internal:8888/",
+    "strip_listen_path": false
+  },
+  "active": true
+}

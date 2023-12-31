@@ -1,0 +1,21 @@
+{
+  "name": "/teams/{team_id}/discussions/{discussion_number}/comments/{comment_number}/reactions",
+  "api_id": "559",
+  "org_id": "test",
+  "use_keyless": true,
+  "version_data": {
+    "not_versioned": true,
+    "versions": {
+      "Default": {
+        "name": "Default",
+        "use_extended_paths": true
+      }
+    }
+  },
+  "proxy": {
+    "listen_path": "/teams/{team_id}/discussions/{discussion_number}/comments/{comment_number}/reactions",
+    "target_url": "http://host.docker.internal:8888/",
+    "strip_listen_path": false
+  },
+  "active": true
+}

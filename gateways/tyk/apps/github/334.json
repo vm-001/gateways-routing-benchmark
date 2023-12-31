@@ -1,0 +1,21 @@
+{
+  "name": "/repos/{owner}/{repo}/releases/generate-notes",
+  "api_id": "334",
+  "org_id": "test",
+  "use_keyless": true,
+  "version_data": {
+    "not_versioned": true,
+    "versions": {
+      "Default": {
+        "name": "Default",
+        "use_extended_paths": true
+      }
+    }
+  },
+  "proxy": {
+    "listen_path": "/repos/{owner}/{repo}/releases/generate-notes",
+    "target_url": "http://host.docker.internal:8888/",
+    "strip_listen_path": false
+  },
+  "active": true
+}

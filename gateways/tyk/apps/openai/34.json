@@ -1,0 +1,21 @@
+{
+  "name": "/assistants/{assistant_id}/files/{file_id}",
+  "api_id": "34",
+  "org_id": "test",
+  "use_keyless": true,
+  "version_data": {
+    "not_versioned": true,
+    "versions": {
+      "Default": {
+        "name": "Default",
+        "use_extended_paths": true
+      }
+    }
+  },
+  "proxy": {
+    "listen_path": "/assistants/{assistant_id}/files/{file_id}",
+    "target_url": "http://host.docker.internal:8888/",
+    "strip_listen_path": false
+  },
+  "active": true
+}

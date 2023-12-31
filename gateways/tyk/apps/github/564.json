@@ -1,0 +1,21 @@
+{
+  "name": "/repos/{owner}/{repo}/hooks/{hook_id}/tests",
+  "api_id": "564",
+  "org_id": "test",
+  "use_keyless": true,
+  "version_data": {
+    "not_versioned": true,
+    "versions": {
+      "Default": {
+        "name": "Default",
+        "use_extended_paths": true
+      }
+    }
+  },
+  "proxy": {
+    "listen_path": "/repos/{owner}/{repo}/hooks/{hook_id}/tests",
+    "target_url": "http://host.docker.internal:8888/",
+    "strip_listen_path": false
+  },
+  "active": true
+}

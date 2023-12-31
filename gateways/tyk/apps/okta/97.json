@@ -1,0 +1,21 @@
+{
+  "name": "/api/v1/idps/{idpId}/users/{userId}",
+  "api_id": "97",
+  "org_id": "test",
+  "use_keyless": true,
+  "version_data": {
+    "not_versioned": true,
+    "versions": {
+      "Default": {
+        "name": "Default",
+        "use_extended_paths": true
+      }
+    }
+  },
+  "proxy": {
+    "listen_path": "/api/v1/idps/{idpId}/users/{userId}",
+    "target_url": "http://host.docker.internal:8888/",
+    "strip_listen_path": false
+  },
+  "active": true
+}
